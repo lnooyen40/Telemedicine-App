@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import helpers.InputValidation;
 import sql.Database;
@@ -26,26 +27,45 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        setTitle("Connected Health");
 
         userName = (EditText) findViewById(R.id.etUsername);
         password = (EditText) findViewById(R.id.etPassword);
         loginBtn    = (Button)   findViewById(R.id.btnLogin);
-        newUserBtn = (Button) findViewById(R.id.btnNewUser);
+        //newUserBtn = (Button) findViewById(R.id.btnNewUser);
 
-        loginBtn.setOnClickListener(new View.OnClickListener() {
+        /*loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 verifyFromSQLite();
             }
         });
-
-        newUserBtn.setOnClickListener(new View.OnClickListener() {
+*/
+        loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Login.this, NewPatient.class);
-                startActivity(intent);
+            public void onClick(View v) {
+                if((userName.getText().toString().equals("lnooyen")) &&
+                        (password.getText().toString().equals("123456"))) {
+                    Toast.makeText(getApplicationContext(), "Redirecting...",
+                            Toast.LENGTH_SHORT).show();
+
+                    Intent myIntent = new Intent(Login.this, Homescreen.class);
+                    myIntent.putExtra("username", userName.getText().toString());
+                    startActivity(myIntent);
+                } else {
+                    Toast.makeText(getApplicationContext(),"Wrong Username or Password",
+                            Toast.LENGTH_SHORT).show();
+
+                }
             }
         });
+        //newUserBtn.setOnClickListener(new View.OnClickListener() {
+          //  @Override
+          //  public void onClick(View view) {
+         //       Intent intent = new Intent(Login.this, NewPatient.class);
+         //       startActivity(intent);
+        //    }
+      //  });
     }
 
     private void verifyFromSQLite()

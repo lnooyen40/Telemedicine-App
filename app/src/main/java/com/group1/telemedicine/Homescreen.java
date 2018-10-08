@@ -5,24 +5,31 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class Homescreen extends AppCompatActivity {
 
 
-    Button btnVisit, btnChat, btnAppt, btnBill, btnHelp, btnLogout;
+    ImageView btnVisit, btnChat, btnAppt, btnBill, btnHelp;
+    TextView welcome;
+    Button btnLogout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homescreen);
+        setTitle("Home");
 
-        btnVisit = (Button) findViewById(R.id.btnVisit);
-        btnChat = (Button) findViewById(R.id.btnChat);
-        btnAppt = (Button) findViewById(R.id.btnAppt2);
-        btnBill = (Button) findViewById(R.id.btnBill);
-        btnHelp = (Button) findViewById(R.id.btnHelp);
+        btnVisit = (ImageView) findViewById(R.id.visitSummary);
+        btnChat = (ImageView) findViewById(R.id.chat);
+        btnAppt = (ImageView) findViewById(R.id.appointments);
+        btnBill = (ImageView) findViewById(R.id.billing);
+        btnHelp = (ImageView) findViewById(R.id.help);
         btnLogout = (Button) findViewById(R.id.btnLogout);
+        welcome = (TextView) findViewById(R.id.welcomeLabel);
 
+        welcome.setText("Welcome, " + getIntent().getExtras().getString("username") + "!");
 
         btnVisit.setOnClickListener(new View.OnClickListener() {
             @Override
