@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LabResults">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="42dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="41dp"
+        app:srcCompat="@drawable/ic_labresults" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:text="Lab Results"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="55dp"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="17dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_back2" />
+
+    <TextView
+        android:id="@+id/lab1"
+        android:layout_width="314dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/grayborderrectangle"
+        android:clickable="true"
+        android:padding="6dp"
+        android:text="TSH"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/doctorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lab1"
+        android:layout_alignStart="@+id/lab1"
+        android:layout_marginStart="6dp"
+        android:text="John Smith, MD"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/lab1"
+        android:layout_marginEnd="43dp"
+        android:text="7/21/18"
+        android:textSize="16sp" />
+
+</RelativeLayout>

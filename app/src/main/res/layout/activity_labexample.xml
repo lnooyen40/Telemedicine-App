@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".labexample">
+
+    <TextView
+        android:id="@+id/result2"
+        android:layout_width="320dp"
+        android:layout_height="87dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="253dp"
+        android:background="@drawable/grayborderrectangle"
+        android:padding="6dp"
+        android:text="TSH ulU/mL"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="TSH"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/orderedBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:text="Ordered By John Smith, MD" />
+
+    <TextView
+        android:id="@+id/resultsDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderedBy"
+        android:layout_centerHorizontal="true"
+        android:text="Resulted on 7/21/18" />
+
+    <TextView
+        android:id="@+id/resultValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/commentLabel2"
+        android:layout_marginTop="218dp"
+        android:text="RESULT VALUES"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/commentLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="129dp"
+        android:text="COMMENT FROM DOCTOR'S OFFICE"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/grayborderrectangle"
+        android:padding="6dp"
+        android:text="Thyroid normal"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="262dp"
+        android:layout_marginStart="88dp"
+        android:text="Value" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView16"
+        android:layout_below="@+id/textView16"
+        android:layout_marginTop="-262dp"
+        android:text="Std Range" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="197dp"
+        android:text="Final Result"
+        android:textColor="@color/gray"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_below="@+id/textView16"
+        android:layout_marginTop="-262dp"
+        android:text="0.35-4.94"
+        android:textColor="@color/gray"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_toStartOf="@+id/textView10"
+        android:text="0.83"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="44dp"
+        android:layout_height="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="13dp"
+        app:srcCompat="@drawable/ic_back2" />
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrescriptionHistory">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="42dp"
+            android:layout_height="37dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="41dp"
+            app:srcCompat="@drawable/ic_prescription" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:text="Prescription History"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="55dp"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="17dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_back2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="416dp"
+        android:layout_above="@+id/backBtn"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/grayborderrectangle"
+                android:text="Acetaminophen 500 MG / Hydrocodone 5 MG Oral Tablet"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/grayborderrectangle"
+                android:text="Cephalexin 500 MG Oral Capsule"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/grayborderrectangle"
+                android:text="Etodolac 400 MG Extended Release Tablet"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/grayborderrectangle"
+                android:text="Meloxicam MOBIC 15 MG tablet"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/grayborderrectangle"
+                android:text="200 ACTUAT Albuterol 0.09 MC/ACTUAT Metered Dose Inhaler [ProAir HFA]"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

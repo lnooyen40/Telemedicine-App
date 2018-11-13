@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/healthcare"
+    tools:context=".RoleSelection">
+
+    <TextView
+        android:id="@+id/roleSelectionTitle"
+        android:layout_width="192dp"
+        android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="57dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/roleSelectionTitle"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="117dp" />
+
+    <TextView
+        android:id="@+id/doctorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/patientBtn"
+        android:layout_marginEnd="92dp"
+        android:text="Doctor"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="345dp" />
+
+    <ImageView
+        android:id="@+id/patientBtn"
+        android:layout_width="155dp"
+        android:layout_height="129dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="119dp"
+        android:clickable="true"
+        android:src="@drawable/ic_person"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+    <ImageView
+        android:id="@+id/doctorBtn"
+        android:layout_width="159dp"
+        android:layout_height="127dp"
+        android:layout_alignTop="@+id/patientBtn"
+        android:layout_toEndOf="@+id/patientBtn"
+        android:clickable="true"
+        android:src="@drawable/ic_doctor"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="223dp" />
+
+    <TextView
+        android:id="@+id/patientLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/doctorLabel"
+        android:layout_marginStart="91dp"
+        android:text="Patient"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="346dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/patientBtn"
+        android:layout_alignTop="@+id/roleSelectionTitle"
+        android:src="@drawable/logo"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="117dp" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="71dp"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="14dp"
+        android:clickable="true"
+        android:src="@drawable/ic_back2" />
+</RelativeLayout>

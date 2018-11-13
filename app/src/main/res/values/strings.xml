@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TelemedicineApp</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="loginBtn">Login</string>
+    <string name="registerBtn">Register</string>
+    <string name="title_activity_registration_role">RoleSelectionActivity</string>
+    <string name="roleSelectionTitle">Select your role</string>
+    <string name="patient">Patient</string>
+    <string name="doctor">Doctor</string>
+    <string name="back">Back</string>
+    <string name="registration">Registration</string>
+    <string name="fullname">Full name</string>
+    <string name="username">Username</string>
+    <string name="birthDate">Birth Date (mm/dd/yyyy)</string>
+    <string name="gender">Gender (M\\F)</string>
+    <string name="phoneNumber">Phone Number (xxx-xxx-xxxx)</string>
+    <string name="password2">Reenter password</string>
+    <string name="confirm">Confirm</string>
+    <string name="title_activity_successul_registration">SuccessulRegistrationActivity</string>
+    <string name="successRegistration">Successful Registration</string>
+    <string name="title_activity_patient_home">patientHomeActivity</string>
+    <string name="title_activity_chat">Chat</string>
+</resources>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "334256905976",
+    "firebase_url": "https://senior-project-9c4ce.firebaseio.com",
+    "project_id": "senior-project-9c4ce",
+    "storage_bucket": "senior-project-9c4ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334256905976:android:50c2a04c4faf0b0a",
+        "android_client_info": {
+          "package_name": "cs4322.project.telemedicineapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334256905976-02hvq0tkdgoob4vpgo9eup1mh1h1o4r9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJGCNuCu6uO9hTcG0tuJ0xihRPyRWkJ-c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

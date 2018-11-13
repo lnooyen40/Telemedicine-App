@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".visit1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Office Visit"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="130dp"
+                tools:layout_editor_absoluteY="40dp" />
+
+            <TextView
+                android:id="@+id/doctorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="John Smith, MD"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="130dp"
+                tools:layout_editor_absoluteY="72dp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4/15/18, 9:00 AM"
+                tools:layout_editor_absoluteX="137dp"
+                tools:layout_editor_absoluteY="97dp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DIAGNOSES"
+                android:textColor="@color/colorAccent"
+                tools:layout_editor_absoluteX="44dp"
+                tools:layout_editor_absoluteY="137dp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:background="@drawable/grayborderrectangle"
+                android:padding="6dp"
+                android:text="Costochondral Chest Pain"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="44dp"
+                tools:layout_editor_absoluteY="156dp" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VITALS RECORDED FOR THIS VISIT"
+                android:textColor="@color/colorAccent"
+                tools:layout_editor_absoluteX="44dp"
+                tools:layout_editor_absoluteY="499dp" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grayborderrectangle"
+                android:padding="6dp"
+                android:text="Blood Pressure"
+                tools:layout_editor_absoluteX="44dp"
+                tools:layout_editor_absoluteY="259dp" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="110/70"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="85dp"
+                tools:layout_editor_absoluteY="297dp" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grayborderrectangle"
+                android:padding="6dp"
+                android:text="Temperature"
+                tools:layout_editor_absoluteX="44dp"
+                tools:layout_editor_absoluteY="330dp" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:text="--"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="232dp"
+                tools:layout_editor_absoluteY="437dp" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grayborderrectangle"
+                android:padding="6dp"
+                android:text="Height"
+                tools:layout_editor_absoluteX="179dp"
+                tools:layout_editor_absoluteY="259dp" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5'11&quot;"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="226dp"
+                tools:layout_editor_absoluteY="297dp" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grayborderrectangle"
+                android:padding="6dp"
+                android:text="Weight"
+                tools:layout_editor_absoluteX="44dp"
+                tools:layout_editor_absoluteY="401dp" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:text="172 lb"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="93dp"
+                tools:layout_editor_absoluteY="437dp" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grayborderrectangle"
+                android:padding="6dp"
+                android:text="Pulse"
+                tools:layout_editor_absoluteX="179dp"
+                tools:layout_editor_absoluteY="330dp" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:text="88"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="232dp"
+                tools:layout_editor_absoluteY="364dp" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grayborderrectangle"
+                android:padding="6dp"
+                android:text="Respiration"
+                tools:layout_editor_absoluteX="179dp"
+                tools:layout_editor_absoluteY="401dp" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="match_parent"
+                android:layout_height="21dp"
+                android:text="--"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="100dp"
+                tools:layout_editor_absoluteY="364dp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MEDICATIONS PRESCRIBED"
+                android:textColor="@color/colorAccent"
+                tools:layout_editor_absoluteX="44dp"
+                tools:layout_editor_absoluteY="225dp" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grayborderrectangle"
+                android:padding="6dp"
+                android:text="Meloxicam (MOBIC) 15 MG tablet"
+                tools:layout_editor_absoluteX="179dp"
+                tools:layout_editor_absoluteY="401dp" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FOLLOW UP INSTRUCTIONS"
+                android:textColor="@color/colorAccent"
+                tools:layout_editor_absoluteX="44dp"
+                tools:layout_editor_absoluteY="225dp" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grayborderrectangle"
+                android:padding="6dp"
+                android:text="No information was recorded for this item"
+                tools:layout_editor_absoluteX="179dp"
+                tools:layout_editor_absoluteY="401dp" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PATIENT INSTRUCTIONS"
+                android:textColor="@color/colorAccent"
+                tools:layout_editor_absoluteX="44dp"
+                tools:layout_editor_absoluteY="225dp" />
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grayborderrectangle"
+                android:padding="6dp"
+                android:text="Start with meloxicam once daily for 2-4 weeks, then can be used as needed. Heating pad may help as well. Let me know if not improving and we can consider strong antiinflammatory like prednisone, though this has more side effects."
+                tools:layout_editor_absoluteX="179dp"
+                tools:layout_editor_absoluteY="401dp" />
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:adjustViewBounds="false"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_back2" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

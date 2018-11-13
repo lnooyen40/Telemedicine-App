@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/healthcare"
+    tools:context=".SuccessulRegistration">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="232dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="92dp"
+        android:gravity="center"
+        android:text="Registration Successful!"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="218dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="301dp"
+        android:background="@drawable/shadowbutton"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</android.support.constraint.ConstraintLayout>

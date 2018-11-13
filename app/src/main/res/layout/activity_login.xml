@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/healthcare"
+    tools:context=".LoginActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="218dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangletoprounded"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:padding="8dp"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="218dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/getSSN"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="298dp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="131dp"
+        android:layout_height="104dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/title"
+        android:layout_marginEnd="92dp"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="21dp"
+        android:clickable="true"
+        android:text="Forgot Password?"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="518dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="43dp"
+        android:fontFamily="@font/xeron"
+        android:text="Connected     Health"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="217dp"
+        android:layout_height="27dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="98dp"
+        android:background="@drawable/shadowbutton"
+        android:text="@string/registerBtn"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="218dp"
+        android:layout_height="29dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="138dp"
+        android:background="@drawable/shadowbutton"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="410dp" />
+
+    <EditText
+        android:id="@+id/getSSN"
+        android:layout_width="218dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="186dp"
+        android:background="@drawable/rectanglebottomrounded"
+        android:ems="10"
+        android:hint="Last 4 of SSN"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="321dp" />
+
+    <TextView
+        android:id="@+id/forgotUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/forgotPassword"
+        android:layout_marginStart="19dp"
+        android:clickable="true"
+        android:text="Forgot Username?"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="488dp" />
+
+</RelativeLayout>
