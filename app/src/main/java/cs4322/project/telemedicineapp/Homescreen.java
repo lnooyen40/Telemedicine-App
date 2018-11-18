@@ -42,10 +42,11 @@ public class Homescreen extends Activity {
         });
 
         // Chat Button Intent
+        // Used chat for Video Call Testing *****
         btnChat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent chatIntent = new Intent(Homescreen.this, Chat.class);
+                Intent chatIntent = new Intent(Homescreen.this, VideoChatViewActivity.class);
                 startActivity(chatIntent);
             }
         });
