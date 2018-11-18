@@ -21,4 +21,36 @@
     <string name="successRegistration">Successful Registration</string>
     <string name="title_activity_patient_home">patientHomeActivity</string>
     <string name="title_activity_chat">Chat</string>
+    <string name="ssn">Last 4 digits of SSN</string>
+    <string name="visitHelp">The visit summary is where you can go to view information on your past visits with all of your doctors. You
+        will be able to see your diagnoses, vitals, any medications prescribed, follow up instructions and patient instructions.
+        If you believe that there is a mistake in your visit summary please contact your office.
+    </string>
+    <string name="labResultsHelp">The lab results page is where you can go to view information on your past labs with all of your doctors. You
+        will be able to see your results, normal values, location, notes and which doctor ordered the lab.
+        If you believe that there is a mistake in your lab results please contact your office.
+    </string>
+    <string name="rxHelp">The prescriptions page is where you can go to view information on your current medications. You
+        will be able to see your prescriptions, dosages, instructions, and prescribing doctor.
+        If you believe that there is a mistake in your prescriptions please contact your office.
+    </string>
+    <string name="chatHelp">The chat page is where you are able to go to message your doctor or to video chat with them. It will show you if your doctor is
+        available for live chat or video chat. If your doctor is not available they will respond at their earliest ability.
+    </string>
+    <string name="apptHelp">The appointments page is where you go to request an appointment for your doctors. You will select a day, time, and doctor you
+        would like to see and it will forward a message to the scheduling desk and if those times work they will schedule you and call you to confirm.
+    </string>
+    <string name="ProfileHelp">The profile page is where you can go to view and update your username, name or email. You will also be able to view your
+        patient ID but will not be able to make any changes.
+    </string>
+    <string name="patientsHelp">The patients page is where you can go to view a list of all your patients currently under your care.
+    </string>
+    <string name="chatHelpDr">The chat page is where you go to respond to patient messages or video chats.
+    </string>
+    <string name="apptHelpDr">The appointments page is where you go to view your appointments scheduled for a certain day.
+    </string>
+    <string name="ProfileHelpDr">The profile page is where you can go to view and update your username, name or email. You will also be able to view your
+        credentials but will not be able to make any changes.
+    </string>
+
 </resources>
