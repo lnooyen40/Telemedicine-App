@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class Homescreen extends Activity {
 
-    ImageView btnVisit, btnChat, btnAppt, btnBill, btnHelp, btnRx, btnLab;
+    ImageView btnVisit, btnChat, btnAppt, btnBill, btnHelp, btnRx, btnLab, btnProfile;
     TextView welcome;
     Button btnLogout;
 
@@ -27,9 +27,10 @@ public class Homescreen extends Activity {
         btnHelp = (ImageView)findViewById(R.id.help);
         btnRx = (ImageView)findViewById(R.id.prescriptions);
         btnLab = (ImageView)findViewById(R.id.labResults);
+        btnProfile = (ImageView)findViewById(R.id.profileBtn);
 
         //welcome = (TextView)findViewById(R.id.btnLogout);
-        btnLogout = (Button) findViewById(R.id.btnLogout);
+        btnLogout = (Button) findViewById(R.id.logoutBtn);
 
         // Button Visit Intent
         btnVisit.setOnClickListener(new View.OnClickListener() {
@@ -103,9 +104,15 @@ public class Homescreen extends Activity {
             }
         });
 
-        //TODO
-        /*
-        ADD button for prescriptions and profile
-         */
+        // Profile Button Intent
+        btnProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent logoutIntent = new Intent(Homescreen.this, Profile.class);
+                startActivity(logoutIntent);
+            }
+        });
+
+
     }
 }
