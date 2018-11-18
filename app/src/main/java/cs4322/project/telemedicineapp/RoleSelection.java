@@ -12,7 +12,7 @@ import android.widget.ImageView;
 public class RoleSelection extends Activity {
 
     private ImageView backBtn;
-    private ImageView patientBtn;
+    private ImageView patientBtn, doctorBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,7 @@ public class RoleSelection extends Activity {
 
         backBtn = (ImageView) findViewById(R.id.back);
         patientBtn = (ImageView) findViewById(R.id.patientBtn);
+        doctorBtn = (ImageView) findViewById(R.id.doctorBtn);
 
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +35,14 @@ public class RoleSelection extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(RoleSelection.this, PatientRegistration.class);
+                startActivity(intent);
+            }
+        });
+
+        doctorBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(RoleSelection.this, DoctorRegistration.class);
                 startActivity(intent);
             }
         });

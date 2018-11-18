@@ -42,7 +42,7 @@ public class PatientRegistration extends AppCompatActivity {
         fullname = (EditText) findViewById(R.id.fullname);
         username = (EditText) findViewById(R.id.username);
         email = (EditText) findViewById(R.id.email);
-        phone = (EditText) findViewById(R.id.phoneNumber);
+        phone = (EditText) findViewById(R.id.phone);
         gender = (EditText) findViewById(R.id.gender);
         password = (EditText) findViewById(R.id.password);
         password2 = (EditText) findViewById(R.id.password2);

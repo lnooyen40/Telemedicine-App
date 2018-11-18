@@ -42,8 +42,9 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="416dp"
-        android:layout_above="@+id/backBtn"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="102dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -59,6 +60,17 @@
                 android:layout_marginTop="15dp"
                 android:background="@drawable/grayborderrectangle"
                 android:text="Acetaminophen 500 MG / Hydrocodone 5 MG Oral Tablet"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/grayborderrectangle"
+                android:text="200 ACTUAT Albuterol 0.09 MC/ACTUAT Metered Dose Inhaler [ProAir HFA]"
                 android:textColor="@color/black" />
 
             <TextView
@@ -92,17 +104,6 @@
                 android:layout_marginTop="15dp"
                 android:background="@drawable/grayborderrectangle"
                 android:text="Meloxicam MOBIC 15 MG tablet"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="7dp"
-                android:background="@drawable/grayborderrectangle"
-                android:text="200 ACTUAT Albuterol 0.09 MC/ACTUAT Metered Dose Inhaler [ProAir HFA]"
                 android:textColor="@color/black" />
 
         </LinearLayout>

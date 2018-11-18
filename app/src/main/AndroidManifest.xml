@@ -27,9 +27,7 @@
             android:name=".Homescreen"
             android:label="@string/title_activity_patient_home" />
         <activity android:name=".Appointments" />
-        <activity
-            android:name=".Chat"
-            android:label="@string/title_activity_chat" />
+        <activity android:name=".Chat" />
         <activity android:name=".Billing" />
         <activity android:name=".Help" />
         <activity android:name=".Visitmanagement" />
@@ -38,7 +36,24 @@
         <activity android:name=".PrescriptionHistory" />
         <activity android:name=".labexample" />
         <activity android:name=".visit1" />
-        <activity android:name=".visit2"></activity>
+        <activity android:name=".visit2" />
+        <activity android:name=".DoctorRegistration" />
+        <activity android:name=".Profile" />
+
+        <!-- This is for Chat -->
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+        <!-- End Chat -->
+        <activity android:name=".DoctorHomescreen" />
+        <activity android:name=".doctorProfile" />
+        <activity android:name=".DoctorHelp" />
+        <activity android:name=".PatientListDr" />
+        <activity android:name=".DrChat" />
+        <activity android:name=".DoctorAppt"></activity>
     </application>
 
 </manifest>

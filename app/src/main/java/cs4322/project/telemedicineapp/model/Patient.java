@@ -96,15 +96,6 @@ public class Patient {
         this.password = password;
     }
 
-    /*public void addPatient (){
-        appDatabase = FirebaseDatabase.getInstance().getReference();
-        appDatabase.child("patients").child(email).child("firt name").setValue(fullname);
-        appDatabase.child("patients").child(email).child("last name").setValue(username);
-        appDatabase.child("patients").child(email).child("phone number").setValue(phoneNumber);
-        appDatabase.child("patients").child(email).child("birth date").setValue(birthDate);
-        appDatabase.child("patients").child(email).child("gender").setValue(gender);
-        appDatabase.child("patients").child(email).child("password").setValue(password);
-    }*/
     public String toString(){
         String value = String.format("Email: %s; First name: %s\n", email, fullname);
         return value;
