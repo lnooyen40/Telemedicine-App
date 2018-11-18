@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/healthcare"
+    tools:context=".DoctorHelp">
+
+    <TextView
+        android:id="@+id/helpLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:text="Help"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="37dp"
+        android:layout_height="41dp"
+        android:layout_alignBottom="@+id/helpLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="178dp"
+        app:srcCompat="@drawable/ic_help"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="774dp"
+        android:layout_below="@id/helpLabel"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="52dp"
+                android:background="@drawable/shadowbutton"
+                android:onClick="onClick"
+                android:text="Chat"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="83dp"
+                tools:layout_editor_absoluteY="410dp" />
+
+            <Button
+                android:id="@+id/patientsLabel2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="52dp"
+                android:background="@drawable/shadowbutton"
+                android:onClick="onClick"
+                android:text="Patients"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="83dp"
+                tools:layout_editor_absoluteY="410dp" />
+
+            <Button
+                android:id="@+id/apptLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="52dp"
+                android:background="@drawable/shadowbutton"
+                android:onClick="onClick"
+                android:text="Appointments"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="83dp"
+                tools:layout_editor_absoluteY="410dp" />
+
+            <Button
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="52dp"
+                android:background="@drawable/shadowbutton"
+                android:onClick="onClick"
+                android:text="Profile"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="83dp"
+                tools:layout_editor_absoluteY="410dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:layout_width="44dp"
+        android:layout_height="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="19dp"
+        app:srcCompat="@drawable/ic_back2" />
+
+
+</RelativeLayout>
