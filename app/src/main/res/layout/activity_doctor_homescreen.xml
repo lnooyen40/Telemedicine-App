@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/healthcare"
+    tools:context=".DoctorHomescreen">
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="218dp"
+        android:layout_height="29dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/shadowbutton"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="410dp" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/chat"
+        android:layout_width="150dp"
+        android:layout_height="149dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="126dp"
+        android:layout_toStartOf="@+id/profileLabel"
+        app:srcCompat="@drawable/ic_chat2"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/appointments"
+        android:layout_width="150dp"
+        android:layout_height="149dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/chat"
+        android:layout_marginEnd="82dp"
+        app:srcCompat="@drawable/ic_appointments"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/help"
+        android:layout_width="150dp"
+        android:layout_height="149dp"
+        android:layout_alignStart="@+id/appointments"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/ic_help"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="314dp" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/profileBtn"
+        android:layout_width="150dp"
+        android:layout_height="149dp"
+        android:layout_above="@+id/profileLabel"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="testClick"
+        app:srcCompat="@drawable/ic_profile4"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="314dp" />
+
+    <TextView
+        android:id="@+id/apptLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/chat"
+        android:layout_marginEnd="116dp"
+        android:text="Appointments"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="267dp" />
+
+    <TextView
+        android:id="@+id/helpLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@+id/help"
+        android:layout_toEndOf="@+id/profileBtn"
+        android:text="Help"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <TextView
+        android:id="@+id/chatLabel"
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/chat"
+        android:layout_toStartOf="@+id/profileBtn"
+        android:text="Chat"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="265dp" />
+
+    <TextView
+        android:id="@+id/profileLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_above="@+id/logoutBtn"
+        android:layout_centerHorizontal="true"
+        android:text="Profile"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="394dp" />
+
+    <TextView
+        android:id="@+id/patients"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/help"
+        android:layout_marginStart="114dp"
+        android:text="Patients"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="394dp" />
+
+    <TextView
+        android:id="@+id/welcomeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/visitSummary"
+        android:layout_alignLeft="@+id/visitSummary"
+        android:layout_marginTop="22dp"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="149dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/profileLabel"
+        app:srcCompat="@drawable/ic_person" />
+
+</RelativeLayout>
