@@ -16,7 +16,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/tvVisitType"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Office Visit"
@@ -27,17 +27,16 @@
                 tools:layout_editor_absoluteY="40dp" />
 
             <TextView
-                android:id="@+id/doctorName"
+                android:id="@+id/tvDocName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="John Smith, MD"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 tools:layout_editor_absoluteX="130dp"
                 tools:layout_editor_absoluteY="72dp" />
 
             <TextView
-                android:id="@+id/textView15"
+                android:id="@+id/tvVisitDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="4/15/18, 9:00 AM"
@@ -45,7 +44,7 @@
                 tools:layout_editor_absoluteY="97dp" />
 
             <TextView
-                android:id="@+id/textView23"
+                android:id="@+id/textview123"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="DIAGNOSES"
@@ -54,7 +53,7 @@
                 tools:layout_editor_absoluteY="137dp" />
 
             <TextView
-                android:id="@+id/textView22"
+                android:id="@+id/tvDiagnosis"
                 android:layout_width="match_parent"
                 android:layout_height="37dp"
                 android:background="@drawable/grayborderrectangle"
@@ -85,7 +84,7 @@
                 tools:layout_editor_absoluteY="259dp" />
 
             <TextView
-                android:id="@+id/textView27"
+                android:id="@+id/tvBP"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="110/70"
@@ -105,7 +104,7 @@
                 tools:layout_editor_absoluteY="330dp" />
 
             <TextView
-                android:id="@+id/textView34"
+                android:id="@+id/tvTemp"
                 android:layout_width="match_parent"
                 android:layout_height="21dp"
                 android:text="--"
@@ -125,7 +124,7 @@
                 tools:layout_editor_absoluteY="259dp" />
 
             <TextView
-                android:id="@+id/textView31"
+                android:id="@+id/tvHeight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="5'11&quot;"
@@ -145,7 +144,7 @@
                 tools:layout_editor_absoluteY="401dp" />
 
             <TextView
-                android:id="@+id/textView30"
+                android:id="@+id/tvWeight"
                 android:layout_width="match_parent"
                 android:layout_height="21dp"
                 android:text="172 lb"
@@ -165,7 +164,7 @@
                 tools:layout_editor_absoluteY="330dp" />
 
             <TextView
-                android:id="@+id/textView25"
+                android:id="@+id/tvPulse"
                 android:layout_width="match_parent"
                 android:layout_height="15dp"
                 android:text="88"
@@ -185,7 +184,7 @@
                 tools:layout_editor_absoluteY="401dp" />
 
             <TextView
-                android:id="@+id/textView35"
+                android:id="@+id/tvResp"
                 android:layout_width="match_parent"
                 android:layout_height="21dp"
                 android:text="--"
@@ -204,7 +203,7 @@
                 tools:layout_editor_absoluteY="225dp" />
 
             <TextView
-                android:id="@+id/textView37"
+                android:id="@+id/tvMedication"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/grayborderrectangle"
@@ -223,7 +222,7 @@
                 tools:layout_editor_absoluteY="225dp" />
 
             <TextView
-                android:id="@+id/textView39"
+                android:id="@+id/tvInstrct"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/grayborderrectangle"

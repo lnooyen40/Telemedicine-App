@@ -55,7 +55,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/doctorName"
+        android:id="@+id/tvDocName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/lab1"

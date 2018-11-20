@@ -80,7 +80,7 @@
         tools:layout_editor_absoluteY="171dp" />
 
     <TextView
-        android:id="@+id/doctorName"
+        android:id="@+id/tvDocName"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
         android:layout_above="@+id/visit"
@@ -95,7 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/doctorName"
+        android:layout_alignStart="@+id/tvDocName"
         android:layout_marginTop="252dp"
         android:text="John Smith, MD"
         tools:layout_editor_absoluteX="39dp"
