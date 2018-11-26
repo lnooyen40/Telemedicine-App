@@ -52,5 +52,6 @@
     <string name="ProfileHelpDr">The profile page is where you can go to view and update your username, name or email. You will also be able to view your
         credentials but will not be able to make any changes.
     </string>
+    <string name="private_app_id">8d0d405d01a340bca7f0269a4a7224bf</string>
 
 </resources>

@@ -9,12 +9,13 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "cs4322.project.telemedicineapp"
-        minSdkVersion 15
+        minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -55,6 +56,8 @@ dependencies {
     implementation 'com.squareup.okhttp3:okhttp:3.4.2'
     implementation 'org.apache.commons:commons-lang3:3.3.2'
     implementation 'com.google.code.gson:gson:2.4'
+    implementation 'io.agora.rtc:full-sdk:2.3.1'
+    implementation 'com.android.support:multidex:1.0.3'
 }
 
 apply plugin: 'com.google.gms.google-services'
