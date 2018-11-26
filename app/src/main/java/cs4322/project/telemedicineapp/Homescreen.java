@@ -1,10 +1,14 @@
 package cs4322.project.telemedicineapp;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.support.v7.app.AlertDialog;
+import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,6 +17,7 @@ public class Homescreen extends Activity {
     ImageView btnVisit, btnChat, btnAppt, btnBill, btnHelp, btnRx, btnLab;
     TextView welcome;
     Button btnLogout;
+    String roomName = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,8 +49,37 @@ public class Homescreen extends Activity {
         btnChat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent chatIntent = new Intent(Homescreen.this, Chat.class);
-                startActivity(chatIntent);
+                // Create Alert Dialog
+                AlertDialog.Builder builder = new AlertDialog.Builder(Homescreen.this);
+                builder.setTitle("Room Name");
+
+                // Get view
+                final EditText roomNameInput = new EditText(Homescreen.this);
+                roomNameInput.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_NORMAL);
+                builder.setView(roomNameInput);
+
+                // Add button to alert
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        roomName = roomNameInput.getText().toString();
+
+                        Intent chatIntent = new Intent(Homescreen.this, VideoChatViewActivity.class);
+                        chatIntent.putExtra("RoomName", roomName);
+                        startActivity(chatIntent);
+                    }
+                });
+
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.cancel();
+                        //Intent returnHome = new Intent(getApplicationContext(), Homescreen.class);
+                        //startActivity(returnHome);
+                    }
+                });
+
+                builder.show();
             }
         });
 
