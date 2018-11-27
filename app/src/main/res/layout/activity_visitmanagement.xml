@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/healthcare"
     tools:context=".Visitmanagement"
     tools:layout_editor_absoluteY="25dp">
 
@@ -11,10 +12,11 @@
         android:id="@+id/backBtn"
         android:layout_width="55dp"
         android:layout_height="52dp"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="26dp"
+        android:layout_alignParentBottom="true"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/shadowbutton"
         android:clickable="true"
         app:srcCompat="@drawable/ic_back2"
         tools:layout_editor_absoluteX="409dp"
