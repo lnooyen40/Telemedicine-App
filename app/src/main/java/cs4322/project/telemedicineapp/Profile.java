@@ -26,7 +26,7 @@ public class Profile extends AppCompatActivity {
     Button UpdateBTN;
 
     String LoginName= ""; // Used to pass login name to other views
-    Patient patient;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,16 +45,20 @@ public class Profile extends AppCompatActivity {
         appDatabase = FirebaseDatabase.getInstance().getReference();
 
         backBtn = (ImageView)findViewById(R.id.backBtn);
-
+/*
         final String userName2 = appDatabase.child("patients").child(LoginName).child("fullname").toString();
         String email = appDatabase.child("patients").child(LoginName).child("email").getKey();
         String DOB = appDatabase.child("patients").child(LoginName).child("birthDate").getKey();
         String phone = appDatabase.child("patients").child(LoginName).child("phoneNumber").getKey();
-        Log.i ("This person", userName2);
-        Log.i ("This email", email);
-        Log.i ("This birthday", DOB);
-        Log.i ("This phone#", phone);
+        //Log.i ("This person", userName2);
+        // Log.i ("This email", email);
+        // Log.i ("This birthday", DOB);
+        // Log.i ("This phone#", phone);
 
+*/
+        String userName2 = "";
+        String email = "";
+        String phone = "";
 
         Name2.setText(userName2);
         Email.setText(email);
@@ -66,7 +70,7 @@ public class Profile extends AppCompatActivity {
         UpdateBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String fullnameStr = Name2.getText().toString();
+              /*  String fullnameStr = Name2.getText().toString();
                 String usernameStr = LoginName;
                 String emailStr = Email.getText().toString();
                 String phoneStr = Phone.getText().toString();
@@ -75,7 +79,7 @@ public class Profile extends AppCompatActivity {
                 String birthdateStr = "";   // doesnt need to change
                 patient = new Patient(fullnameStr, emailStr, phoneStr, birthdateStr, genderStr, passwordStr);
                 appDatabase.child("patients").child(usernameStr).setValue(patient);
-
+            */
             }
 
         });
