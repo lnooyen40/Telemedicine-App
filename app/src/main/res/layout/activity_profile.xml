@@ -13,28 +13,18 @@
         android:layout_height="106dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="58dp"
         app:srcCompat="@drawable/ic_profile4" />
 
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/email"
-        android:layout_marginTop="242dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-8dp"
+        android:layout_marginTop="239dp"
         android:text="Name"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/usernameET"
-        android:layout_alignEnd="@+id/name"
-        android:text="Username"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -45,68 +35,46 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="339dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="298dp"
         android:text="Email"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/patientID"
-        android:layout_width="wrap_content"
-        android:layout_height="51dp"
+        android:id="@+id/Phone"
+        android:layout_width="142dp"
+        android:layout_height="56dp"
         android:layout_alignEnd="@+id/name"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="393dp"
-        android:text="Patient ID"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="-51dp"
+        android:text="Phone Number"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/nameET"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/name"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/usernameET"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/nameET"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/emailET"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/email"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/patientIDET"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/patientID"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:inputType="textPersonName" />
+    <TextView
+        android:id="@+id/Password"
+        android:layout_width="142dp"
+        android:layout_height="56dp"
+        android:layout_alignEnd="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="403dp"
+        android:layout_marginEnd="-51dp"
+        android:text="Password"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/updateInfo"
         android:layout_width="218dp"
         android:layout_height="29dp"
+        android:layout_alignStart="@+id/etName"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="358dp"
+        android:layout_marginBottom="86dp"
         android:background="@drawable/shadowbutton"
         android:text="Update Information"
         android:textAllCaps="false"
@@ -121,7 +89,7 @@
         android:layout_height="29dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="317dp"
+        android:layout_marginBottom="47dp"
         android:background="@drawable/shadowbutton"
         android:text="Save Changes"
         android:textAllCaps="false"
@@ -138,5 +106,57 @@
         android:layout_marginBottom="11dp"
         android:layout_marginEnd="13dp"
         app:srcCompat="@drawable/ic_back2" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="521dp" />
+
+    <EditText
+        android:id="@+id/tvEMAIL2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNAME2"
+        android:layout_alignBaseline="@+id/email"
+        android:layout_alignEnd="@+id/updateInfo"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="1dp" />
+
+    <EditText
+        android:id="@+id/tvPHONE2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEMAIL2"
+        android:layout_alignBaseline="@+id/phone"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="172dp" />
+
+    <EditText
+        android:id="@+id/tvPASSWORD2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/password"
+        android:layout_alignStart="@+id/tvPHONE2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-80dp"
+        android:layout_marginBottom="127dp"
+        android:hint="Input new Password" />
+
+    <EditText
+        android:id="@+id/tvNAME2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/updateInfo"
+        android:layout_alignBottom="@+id/name" />
 
 </RelativeLayout>
