@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.support.v7.app.AlertDialog;
 import android.text.InputType;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,11 +20,18 @@ public class Homescreen extends Activity {
     Button btnLogout;
     String roomName = ""; // Used for video chatting
 
+
+    String Username= ""; // Used to pass login name to other views
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient_home);
         setTitle("Home");
+
+        Username = getIntent().getExtras().getString("username");
+
 
         btnVisit = (ImageView)findViewById(R.id.visitSummary);
         btnChat = (ImageView)findViewById(R.id.chat);
@@ -34,6 +42,7 @@ public class Homescreen extends Activity {
         btnLab = (ImageView)findViewById(R.id.labResults);
         btnProfile = (ImageView)findViewById(R.id.profileBtn);
 
+
         //welcome = (TextView)findViewById(R.id.btnLogout);
         btnLogout = (Button) findViewById(R.id.logoutBtn);
 
@@ -42,6 +51,7 @@ public class Homescreen extends Activity {
             @Override
             public void onClick(View view) {
                 Intent visitIntent = new Intent(Homescreen.this, Visitmanagement.class);
+           //     visitIntent.putExtra("username", Username);
                 startActivity(visitIntent);
             }
         });
@@ -89,6 +99,7 @@ public class Homescreen extends Activity {
             @Override
             public void onClick(View view) {
                 Intent apptIntent = new Intent(Homescreen.this, Appointments.class);
+                apptIntent.putExtra("username", Username);
                 startActivity(apptIntent);
             }
         });
@@ -98,6 +109,7 @@ public class Homescreen extends Activity {
             @Override
             public void onClick(View view) {
                 Intent billIntent = new Intent(Homescreen.this, Billing.class);
+       //         billIntent.putExtra("username", Username);
                 startActivity(billIntent);
             }
         });
@@ -107,6 +119,7 @@ public class Homescreen extends Activity {
             @Override
             public void onClick(View view) {
                 Intent labIntent = new Intent(Homescreen.this, LabResults.class);
+         //       labIntent.putExtra("username", Username);
                 startActivity(labIntent);
             }
         });
@@ -142,8 +155,9 @@ public class Homescreen extends Activity {
         btnProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent logoutIntent = new Intent(Homescreen.this, Profile.class);
-                startActivity(logoutIntent);
+                Intent profileIntent = new Intent(Homescreen.this, Profile.class);
+                profileIntent.putExtra("username", Username);    // Send username into profile
+                startActivity(profileIntent);
             }
         });
 
