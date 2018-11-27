@@ -3,6 +3,7 @@ package cs4322.project.telemedicineapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,6 +23,7 @@ public class Login extends AppCompatActivity {
     private Button loginBtn;
     private EditText username;
     private EditText password;
+
 
     private DatabaseReference appDatabase;
 
@@ -50,7 +52,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                String usernameStr = username.getText().toString();
+                final String usernameStr = username.getText().toString();
                 final String passwordStr = password.getText().toString();
 
                 if (!usernameStr.equals("") && !passwordStr.equals("")) {
@@ -63,9 +65,11 @@ public class Login extends AppCompatActivity {
 
                             if (pt != null && pt.getPassword().equals(passwordStr)) {
                                 Intent intent = new Intent(Login.this, Homescreen.class);
+                                intent.putExtra("username", usernameStr);
+
                                 startActivity(intent);
                                 //String usernameStr = username.getText().toString();
-                                //intent.putExtra("name")
+
                             } else {
                                 Toast.makeText(Login.this, "Invalid Username or Password", Toast.LENGTH_SHORT).show();
                             }

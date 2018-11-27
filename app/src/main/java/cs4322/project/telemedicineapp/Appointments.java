@@ -19,10 +19,16 @@ public class Appointments extends AppCompatActivity {
     Spinner         spin;
     Button          request;
 
+
+    String Username;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_appointments);
+
+        Username = getIntent().getExtras().getString("username");
+
 
         Calendar = (CalendarView)   findViewById(R.id.cvCalendar);
         selected = (TextView)       findViewById(R.id.tvSelected);
@@ -44,7 +50,7 @@ public class Appointments extends AppCompatActivity {
         request.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String user = "Alex";
+                String user = Username;
                 String date = (String)selected.getText();
                 String time = spin.getSelectedItem().toString();
                 String visittype = "";

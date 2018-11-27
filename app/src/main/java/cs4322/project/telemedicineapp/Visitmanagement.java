@@ -28,7 +28,7 @@ public class Visitmanagement extends AppCompatActivity {
         visit1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Visitmanagement.this, visit1.class);
+                Intent intent = new Intent(Visitmanagement.this, testvisitwebview.class);
                 startActivity(intent);
             }
         });

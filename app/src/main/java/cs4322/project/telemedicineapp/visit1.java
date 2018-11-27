@@ -19,9 +19,6 @@ import ca.uhn.fhir.rest.gclient.TokenClientParam;
 
 public class visit1 extends AppCompatActivity {
 
-    // Create a client (only needed once)
-    FhirContext ctx = new FhirContext();
-    IGenericClient client = ctx.newRestfulGenericClient("https://api-v5-dstu2.hspconsortium.org/PaCon/open");
 
     ImageView backBtn;
 
@@ -38,30 +35,6 @@ public class visit1 extends AppCompatActivity {
         vweight = (TextView) findViewById(R.id.tvWeight);           vpulse = (TextView) findViewById(R.id.tvPulse) ;
         vresp = (TextView) findViewById(R.id.tvResp) ;              vmeds = (TextView) findViewById(R.id.tvMedication);
         vinstruct = (TextView) findViewById(R.id.tvInstrct);
-
-        // Invoke the client
-        ca.uhn.fhir.model.dstu2.resource.Bundle bundle = client.search().forResource(Observation.class)
-                .where(new TokenClientParam("_id").exactly().code("SMART-7777701"))
-                .prettyPrint()
-                .returnBundle(ca.uhn.fhir.model.dstu2.resource.Bundle.class)
-                .execute();
-
-
-        /*
-         String visitdoc = bundle.getString("key");
-
-          All of this information is pulled from the Observation.class of hAPI
-     Codes for these different values:
-
-     Obs codes :       BP               8480-6   (S) /  8462-4   (D)
-                       Temp             8310-5
-                       Weight           3141-9
-                       Height           8302-2
-                       pulse            8867-4
-                       resp             9279-1
-
-        id  Date then code
-         */
 
 
 
