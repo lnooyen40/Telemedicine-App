@@ -12,23 +12,23 @@ public class Doctor {
 
     }
 
-    public Doctor(String username, String fullname, String email, String facility, String credentials, String password) {
+    public Doctor(String username, String fullname, String email, String facility, String credentials) {
         this.username = username;
         this.fullname = fullname;
         this.email = email;
         this.facility = facility;
         this.credentials = credentials;
-        this.password = password;
+        //this.password = password;
     }
 
-    public Doctor(String fullname, String email, String facility, String credentials, String password) {
+    /*public Doctor(String fullname, String email, String facility, String credentials, String password) {
         //this.username = username;
         this.fullname = fullname;
         this.email = email;
         this.facility = facility;
         this.credentials = credentials;
         this.password = password;
-    }
+    }*/
 
     public String getUsername() {
         return username;

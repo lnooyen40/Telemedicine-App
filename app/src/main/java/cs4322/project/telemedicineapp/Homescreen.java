@@ -8,14 +8,11 @@ import android.support.v7.app.AlertDialog;
 import android.text.InputType;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.*;
 
 public class Homescreen extends Activity {
 
-    ImageView btnVisit, btnChat, btnAppt, btnBill, btnHelp, btnRx, btnLab, btnProfile;
+    ImageView btnVisit, btnChat, btnAppt, btnVideo, btnHelp, btnRx, btnLab, btnProfile;
     TextView welcome;
     Button btnLogout;
     String roomName = ""; // Used for video chatting
@@ -30,13 +27,13 @@ public class Homescreen extends Activity {
         setContentView(R.layout.activity_patient_home);
         setTitle("Home");
 
-        Username = getIntent().getExtras().getString("username");
+        //Username = getIntent().getExtras().getString("username");
 
 
         btnVisit = (ImageView)findViewById(R.id.visitSummary);
         btnChat = (ImageView)findViewById(R.id.chat);
         btnAppt = (ImageView)findViewById(R.id.appointments);
-        btnBill = (ImageView)findViewById(R.id.billing);
+        btnVideo = (ImageView)findViewById(R.id.videoChatBtn);
         btnHelp = (ImageView)findViewById(R.id.help);
         btnRx = (ImageView)findViewById(R.id.prescriptions);
         btnLab = (ImageView)findViewById(R.id.labResults);
@@ -60,6 +57,27 @@ public class Homescreen extends Activity {
         btnChat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent chatIntent = new Intent(Homescreen.this, chatList.class);
+                //         billIntent.putExtra("username", Username);
+                startActivity(chatIntent);
+            }
+        });
+
+        // Appointment Button Intent
+        btnAppt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent apptIntent = new Intent(Homescreen.this, Appointments.class);
+                apptIntent.putExtra("username", Username);
+                startActivity(apptIntent);
+            }
+        });
+
+        // Video Button Intent
+        btnVideo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
                 // Create Alert Dialog
                 AlertDialog.Builder builder = new AlertDialog.Builder(Homescreen.this);
                 builder.setTitle("Room Name");
@@ -74,10 +92,14 @@ public class Homescreen extends Activity {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         roomName = roomNameInput.getText().toString();
-
-                        Intent chatIntent = new Intent(Homescreen.this, VideoChatViewActivity.class);
-                        chatIntent.putExtra("RoomName", roomName);
-                        startActivity(chatIntent);
+                        if(roomName.isEmpty()){
+                            dialogInterface.cancel();
+                            Toast.makeText(getApplicationContext(), "Room Name Cannot be Empty", Toast.LENGTH_LONG).show();
+                        } else {
+                            Intent chatIntent = new Intent(Homescreen.this, VideoChatViewActivity.class);
+                            chatIntent.putExtra("RoomName", roomName);
+                            startActivity(chatIntent);
+                        }
                     }
                 });
 
@@ -91,26 +113,6 @@ public class Homescreen extends Activity {
                 });
 
                 builder.show();
-            }
-        });
-
-        // Appointment Button Intent
-        btnAppt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent apptIntent = new Intent(Homescreen.this, Appointments.class);
-                apptIntent.putExtra("username", Username);
-                startActivity(apptIntent);
-            }
-        });
-
-        // Bill Button Intent
-        btnBill.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent billIntent = new Intent(Homescreen.this, Billing.class);
-       //         billIntent.putExtra("username", Username);
-                startActivity(billIntent);
             }
         });
 
