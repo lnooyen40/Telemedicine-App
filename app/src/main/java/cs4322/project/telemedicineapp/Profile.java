@@ -60,12 +60,12 @@ public class Profile extends AppCompatActivity {
         String email = "";
         String phone = "";
 
-        Name2.setText(userName2);
-        Email.setText(email);
-        Phone.setText(phone);
+        //Name2.setText(userName2);
+        //Email.setText(userName2);
+        Phone.setText(phone + "");
 
 
-        Username.setText(LoginName);
+       // Email.setText(LoginName + "");
 
         UpdateBTN.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,6 +80,7 @@ public class Profile extends AppCompatActivity {
                 patient = new Patient(fullnameStr, emailStr, phoneStr, birthdateStr, genderStr, passwordStr);
                 appDatabase.child("patients").child(usernameStr).setValue(patient);
             */
+              Email.setText(LoginName);
             }
 
         });

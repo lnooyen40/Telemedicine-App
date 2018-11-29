@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CalendarView;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,6 +19,7 @@ public class Appointments extends AppCompatActivity {
     TextView        selected;
     Spinner         spin;
     Button          request;
+    ImageView backBtn;
 
 
     String Username;
@@ -34,6 +36,7 @@ public class Appointments extends AppCompatActivity {
         selected = (TextView)       findViewById(R.id.tvSelected);
         spin     = (Spinner)        findViewById(R.id.spinOptions);
         request  = (Button)         findViewById(R.id.btnRequest);
+        backBtn = (ImageView) findViewById(R.id.backBtn);
 
         Calendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
@@ -61,7 +64,13 @@ public class Appointments extends AppCompatActivity {
             }
         });
 
-
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Appointments.this, Homescreen.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

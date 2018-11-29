@@ -1,7 +1,6 @@
 package cs4322.project.telemedicineapp.model;
 
 
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.IgnoreExtraProperties;
 
 @IgnoreExtraProperties
@@ -18,17 +17,17 @@ public class Patient {
 
     }
 
-    public Patient(String fullname, String username, String email, String phoneNumber, String birthDate, String gender, String password) {
+    public Patient(String fullname, String username, String email, String phoneNumber, String birthDate, String gender) {
         this.fullname = fullname;
         this.username = username;
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.birthDate = birthDate;
         this.gender = gender;
-        this.password = password;
+        //this.password = password;
     }
 
-    public Patient(String fullname,String email, String phoneNumber, String birthDate, String gender, String password) {
+    /*public Patient(String fullname,String email, String phoneNumber, String birthDate, String gender, String password) {
         this.fullname = fullname;
         //this.username = username;
         this.email = email;
@@ -36,7 +35,7 @@ public class Patient {
         this.birthDate = birthDate;
         this.gender = gender;
         this.password = password;
-    }
+    }*/
 
     //Accessors
     public String getfullname() {

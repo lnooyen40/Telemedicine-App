@@ -147,14 +147,16 @@
     </ScrollView>
 
     <ImageView
-        android:id="@+id/backBtn"
-        android:layout_width="44dp"
-        android:layout_height="41dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="21dp"
-        android:layout_marginEnd="19dp"
-        app:srcCompat="@drawable/ic_back2" />
+            android:id="@+id/backBtn"
+            android:layout_width="44dp"
+            android:layout_height="41dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="21dp"
+            android:layout_marginEnd="19dp"
+            app:srcCompat="@drawable/ic_back2"
+            android:onClick="onClick"
+            android:clickable="true"/>
 
 
 </RelativeLayout>

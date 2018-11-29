@@ -31,15 +31,6 @@ public class Help extends AppCompatActivity {
         appointments = (Button) findViewById(R.id.apptLabel);
         profile = (Button) findViewById(R.id.profile);
 
-        backBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Help.this, Homescreen.class);
-                startActivity(intent);
-            }
-        });
-
-
     }
 
     public void onClick(View view){
@@ -121,6 +112,11 @@ public class Help extends AppCompatActivity {
                 d.setTitle("Appointments");
                 d.show();
                 break;
+            case R.id.backBtn:
+                Intent intent = new Intent(Help.this, Homescreen.class);
+                startActivity(intent);
+                break;
+
         }
     }
 }
