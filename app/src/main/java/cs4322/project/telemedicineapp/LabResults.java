@@ -11,7 +11,7 @@ import org.w3c.dom.Text;
 
 public class LabResults extends AppCompatActivity {
 
-    ImageView backBtn;
+    ImageView backBtn, questionBtn;
     TextView labResult;
 
     @Override
@@ -21,6 +21,7 @@ public class LabResults extends AppCompatActivity {
 
         backBtn = (ImageView)findViewById(R.id.backBtn);
         labResult = (TextView)findViewById(R.id.lab1);
+        questionBtn = (ImageView)findViewById(R.id.questionBtn);
 
         labResult.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +39,12 @@ public class LabResults extends AppCompatActivity {
             }
         });
 
-
+        questionBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LabResults.this, chatList.class);
+                startActivity(intent);
+            }
+        });
     }
 }

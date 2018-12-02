@@ -13,6 +13,7 @@ import org.w3c.dom.Text;
 public class Visitmanagement extends AppCompatActivity {
 
     ImageView backBtn;
+    ImageView questionBtn;
     TextView visit1, visit2;
 
     @Override
@@ -24,6 +25,7 @@ public class Visitmanagement extends AppCompatActivity {
         backBtn = (ImageView)findViewById(R.id.backBtn);
         visit1 = (TextView)findViewById(R.id.visit);
         visit2 = (TextView)findViewById(R.id.visit2);
+        questionBtn = (ImageView)findViewById(R.id.questionBtn);
 
         visit1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +50,16 @@ public class Visitmanagement extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        questionBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Visitmanagement.this, chatList.class);
+                startActivity(intent);
+            }
+        });
+
+
 
 
     }

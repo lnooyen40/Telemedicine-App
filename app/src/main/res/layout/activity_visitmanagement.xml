@@ -16,7 +16,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="26dp"
-        android:background="@drawable/shadowbutton"
         android:clickable="true"
         app:srcCompat="@drawable/ic_back2"
         tools:layout_editor_absoluteX="409dp"
@@ -122,6 +121,17 @@
         android:text="4/15/2018"
         tools:layout_editor_absoluteX="365dp"
         tools:layout_editor_absoluteY="113dp" />
+
+    <ImageView
+        android:id="@+id/questionBtn"
+        android:layout_width="68dp"
+        android:layout_height="54dp"
+        android:layout_alignStart="@+id/tvDocName"
+        android:layout_alignTop="@+id/backBtn"
+        android:layout_marginStart="-14dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/ic_question"
+        android:clickable="true"/>
 
 
 </RelativeLayout>

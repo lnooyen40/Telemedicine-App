@@ -13,7 +13,7 @@
         android:layout_height="29dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="26dp"
         android:background="@drawable/shadowbutton"
         android:text="Logout"
         android:textAllCaps="false"
@@ -24,10 +24,11 @@
 
     <android.support.v7.widget.AppCompatImageView
         android:id="@+id/chat"
-        android:layout_width="150dp"
-        android:layout_height="149dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="126dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="43dp"
         android:layout_toStartOf="@+id/profileLabel"
         app:srcCompat="@drawable/ic_chat2"
         tools:layout_editor_absoluteX="30dp"
@@ -35,31 +36,36 @@
 
     <android.support.v7.widget.AppCompatImageView
         android:id="@+id/appointments"
-        android:layout_width="150dp"
-        android:layout_height="149dp"
-        android:layout_alignParentEnd="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_alignTop="@+id/chat"
-        android:layout_marginEnd="82dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="48dp"
         app:srcCompat="@drawable/ic_appointments"
         tools:layout_editor_absoluteX="153dp"
         tools:layout_editor_absoluteY="184dp" />
 
     <android.support.v7.widget.AppCompatImageView
         android:id="@+id/help"
-        android:layout_width="150dp"
-        android:layout_height="149dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/chatLabel"
         android:layout_alignStart="@+id/appointments"
-        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="0dp"
         app:srcCompat="@drawable/ic_help"
         tools:layout_editor_absoluteX="152dp"
         tools:layout_editor_absoluteY="314dp" />
 
     <android.support.v7.widget.AppCompatImageView
         android:id="@+id/profileBtn"
-        android:layout_width="150dp"
-        android:layout_height="149dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_above="@+id/profileLabel"
-        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="32dp"
+        android:layout_toStartOf="@+id/help"
         android:clickable="true"
         android:onClick="testClick"
         app:srcCompat="@drawable/ic_profile4"
@@ -70,9 +76,10 @@
         android:id="@+id/apptLabel"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
-        android:layout_alignParentEnd="true"
         android:layout_below="@+id/chat"
-        android:layout_marginEnd="116dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="50dp"
         android:text="Appointments"
         android:textColor="@android:color/background_dark"
         android:textStyle="bold"
@@ -84,6 +91,8 @@
         android:layout_width="wrap_content"
         android:layout_height="32dp"
         android:layout_below="@+id/help"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="6dp"
         android:layout_toEndOf="@+id/profileBtn"
         android:text="Help"
         android:textColor="@android:color/background_dark"
@@ -96,6 +105,8 @@
         android:layout_width="42dp"
         android:layout_height="36dp"
         android:layout_below="@+id/chat"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="50dp"
         android:layout_toStartOf="@+id/profileBtn"
         android:text="Chat"
         android:textColor="@android:color/background_dark"
@@ -109,6 +120,7 @@
         android:layout_height="58dp"
         android:layout_above="@+id/logoutBtn"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-27dp"
         android:text="Profile"
         android:textColor="@android:color/background_dark"
         android:textStyle="bold"
@@ -116,17 +128,18 @@
         tools:layout_editor_absoluteY="394dp" />
 
     <TextView
-            android:id="@+id/videoLabel"
-            android:layout_width="79dp"
-            android:layout_height="54dp"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/help"
-            android:layout_marginStart="114dp"
-            android:text="Video Chat"
-            android:textColor="@android:color/background_dark"
-            android:textStyle="bold"
-            tools:layout_editor_absoluteX="54dp"
-            tools:layout_editor_absoluteY="394dp"/>
+        android:id="@+id/videoLabel"
+        android:layout_width="79dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/help"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="-2dp"
+        android:text="Video Chat"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="394dp" />
 
     <TextView
         android:id="@+id/welcomeLabel"
@@ -141,11 +154,13 @@
         android:textStyle="bold" />
 
     <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="150dp"
-            android:layout_height="149dp"
-            android:layout_centerVertical="true"
-            android:layout_toStartOf="@+id/profileLabel"
-            app:srcCompat="@drawable/ic_video"/>
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/profileBtn"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="37dp"
+        android:layout_toStartOf="@+id/profileLabel"
+        app:srcCompat="@drawable/ic_video" />
 
 </RelativeLayout>
